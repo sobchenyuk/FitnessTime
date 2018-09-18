@@ -1,0 +1,57 @@
+/*!
+ * navbar
+ */
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%)
+  }
+  100% {
+    transform: translateY(0%)
+  }
+}
+.nav
+  min-height: 100px;
+.navbar
+  position: absolute
+  width: 100%;
+  background-color: $black;
+  min-height: 100px;
+  &.fixed
+    top 0
+    position: fixed
+    transform: translateY(-100%);
+    animation: slide-in 0.5s forwards 0.1s;
+  .navbar-item__link
+    color: $white;
+    font-size: 14px;
+    padding: 0;
+    &:hover
+      background-color: transparent;
+      color: $white;
+.navbar-brand__logo
+  color: $white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+.navbar-item__link--text
+  padding 10px 14px;
+  &.active
+  &:hover
+    background-color: $red
+@media screen and (max-width: 1087px)
+  .nav
+    min-height: auto;
+  .navbar
+    min-height: auto;
+    top 0
+    position: fixed
+    &.fixed
+      transform: translateY(0);
+      animation none
+    .navbar-item__link
+      padding: 3px 0.75rem;
+  .navbar-item__link--text
+    color: $black
+    display: block;
+    &.active
+    &:hover
+      color: $white

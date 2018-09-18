@@ -1,0 +1,126 @@
+/*!
+ * slider
+ */
+
+.section_slider
+  max-width: 1900px;
+  margin: 0 auto;
+  width: 100%;
+  .owl-carousel
+    .owl-nav
+      position: absolute;
+      top 45%
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button
+        border-radius 50%
+        background-color $black
+        width: 40px;
+        height: 40px;
+        span
+          color transparent
+          position relative
+        &.owl-prev
+          margin-right: 80%;
+          span
+            &:after
+              display: block;
+              content: ''
+              background url("/img/slider/Shape_left.png")
+              width: 8px;
+              height: 15px;
+              position: absolute;
+              left: 0;
+              top: 0;
+              transform: translateX(-25%);
+        &.owl-next
+          span
+            &:after
+              display: block;
+              content: ''
+              background url("/img/slider/Shape_right.png")
+              width: 8px;
+              height: 15px;
+              position: absolute;
+              left: 0;
+              top: 0;
+
+.slide-item {
+  position: relative;
+  background-repeat: no- repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .slide-item {
+    min-height: 280px;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .slide-item {
+    height: 360px;
+    min-height: 360px;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .slide-item {
+    height: 581px;
+    min-height: 581px;
+  }
+}
+.slide-item__container
+  height: 100%
+.slide-item__content
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+.slide-item__content--first
+  display: table;
+  color: $white
+  background-color $red
+  font-size: 12px;
+  padding: 11px;
+.slide-item__content--title
+  padding: 20px 22px;
+  color: $white
+  background-color $black
+  font-size: 30px;
+  font-weight: 700;
+  display: block;
+  margin: 1px 0;
+.slide-item__content--last
+  color: $white
+  background-color $black
+  padding: 15px 24px;
+  font-size: 18px;
+  display: table;
+@media screen and (max-width: 1087px)
+  .section_slider
+    padding-top: 68px;
+  .slide-item__content
+    align-items: center;
+    width: 100%;
+@media screen and (max-width: 650px)
+  .slide-item__content--title
+    font-size: 18px;
+  .slide-item__content
+    margin-top 30%
+@media screen and (max-width: 425px)
+  .slide-item__content
+    align-items: flex-start;
+    margin-top: 12em;
+  .slide-item__content--title,
+  .slide-item__content--last
+    font-size: 14px;
+  .section_slider .owl-carousel .owl-nav
+    display: none;

@@ -1,0 +1,70 @@
+/*!
+ * welcome
+ */
+.section_welcome
+  padding-top 55px
+  padding-bottom 70px
+.section_title
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom 11px
+.section_title__color
+  color $red
+.section_subtitle
+  font-family: 'Open Sans', sans-serif;
+  color: #a2a2a2;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 30px;
+.section_title__h
+  font-size: 14px;
+  font-weight: 700;
+  margin-left 15px
+.section_subtitle__text
+  color: #777777;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+.column_icon
+  display: flex;
+  align-items: center
+  margin-bottom 11px
+  min-height 40px
+.column_icon__sprite
+  margin: auto 0;
+  display: flex;
+.clipboard, .like, .group, .takeaway {
+  display: inline-block;
+  background: url('/img/sprite.png') no-repeat;
+  background-size 26px
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+.clipboard {
+  background-position: 4px 0;
+  width: 31px;
+  height: 30px;
+}
+.like {
+  background-position: 3px -44px;
+  background-size: 38px;
+  width: 30px;
+  height: 21px;
+}
+.group {
+  background-position: 0px -68px;
+  background-size: 40px;
+  width: 19px;
+  height: 23px;
+}
+.takeaway {
+  background-position: -19px -67px;
+  background-size: 40px;
+  width: 17px;
+  height: 23px;
+}
+@media screen and (max-width: 1087px)
+  .section_welcome
+    padding-left: 30px;
+    padding-right: 30px;
