@@ -1,7 +1,7 @@
 import 'owl.carousel';
 
 const callbacks = (event) =>{
-    console.log(event)
+    // console.log(event)
 };
 
 const options = {
