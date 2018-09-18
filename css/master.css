@@ -363,7 +363,7 @@ h6 {
 .group,
 .takeaway {
   display: inline-block;
-  background: url("/img/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   -webkit-background-size: 26px 26px;
   background-size: 26px;
   overflow: hidden;
@@ -406,7 +406,7 @@ h6 {
  * trainers
  */
 .section_trainer {
-  background: url("/img/section_trainer.png");
+  background: url("../img/section_trainer.png");
   padding-top: 48px;
   padding-bottom: 60px;
 }
