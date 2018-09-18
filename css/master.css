@@ -169,7 +169,7 @@ h6 {
 .section_slider .owl-carousel .owl-nav button.owl-prev span:after {
   display: block;
   content: '';
-  background: url("/img/slider/Shape_left.png");
+  background: url("../img/slider/Shape_left.png");
   width: 8px;
   height: 15px;
   position: absolute;
@@ -183,7 +183,7 @@ h6 {
 .section_slider .owl-carousel .owl-nav button.owl-next span:after {
   display: block;
   content: '';
-  background: url("/img/slider/Shape_right.png");
+  background: url("../img/slider/Shape_right.png");
   width: 8px;
   height: 15px;
   position: absolute;
