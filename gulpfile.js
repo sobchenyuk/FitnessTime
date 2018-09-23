@@ -20,7 +20,7 @@ const path = {
       js: './js/',
       css: './css/',
     }
-}
+};
 
 // name tasks
 const BROWSER_SYNC = 'browser-sync';
@@ -47,7 +47,7 @@ gulp.task(BROWSER_SYNC, () => {
 
 // script
 gulp.task(JAVA_SCRIPT, () => {
-  browserify({entries: `${path.app.js}app${TYPE_FILE}`, extensions: [TYPE_FILE, '.css'], debug: true})
+  browserify({entries: `${path.app.js}app${TYPE_FILE}`, extensions: [TYPE_FILE, '.ts'], debug: true})
   .transform(babelify,{
     presets: ['@babel/env'],
     plugins: [

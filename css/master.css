@@ -164,7 +164,7 @@ h6 {
   position: relative;
 }
 .section_slider .owl-carousel .owl-nav button.owl-prev {
-  margin-right: 80%;
+  margin-right: 90%;
 }
 .section_slider .owl-carousel .owl-nav button.owl-prev span:after {
   display: block;
@@ -268,6 +268,9 @@ h6 {
 @media screen and (max-width: 1087px) {
   .section_slider {
     padding-top: 68px;
+  }
+  .section_slider .owl-carousel .owl-nav button.owl-prev {
+    margin-right: 80%;
   }
   .slide-item__content {
     -webkit-box-align: center;
@@ -490,8 +493,16 @@ h6 {
 .flip-container,
 .front,
 .back {
-  height: 385px;
-  width: 342px;
+  height: 325px;
+  width: 100%;
+}
+@media screen and (max-width: 930px) {
+  .flip-container,
+  .front,
+  .back {
+    height: 385px;
+    width: 342px;
+  }
 }
 @media screen and (max-width: 375px) {
   .flip-container,

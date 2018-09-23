@@ -23,12 +23,12 @@
           color transparent
           position relative
         &.owl-prev
-          margin-right: 80%;
+          margin-right: 90%;
           span
             &:after
               display: block;
               content: ''
-              background url("/img/slider/Shape_left.png")
+              background url("../img/slider/Shape_left.png")
               width: 8px;
               height: 15px;
               position: absolute;
@@ -40,7 +40,7 @@
             &:after
               display: block;
               content: ''
-              background url("/img/slider/Shape_right.png")
+              background url("../img/slider/Shape_right.png")
               width: 8px;
               height: 15px;
               position: absolute;
@@ -107,6 +107,11 @@
 @media screen and (max-width: 1087px)
   .section_slider
     padding-top: 68px;
+    .owl-carousel
+      .owl-nav
+        button
+          &.owl-prev
+            margin-right: 80%;
   .slide-item__content
     align-items: center;
     width: 100%;
